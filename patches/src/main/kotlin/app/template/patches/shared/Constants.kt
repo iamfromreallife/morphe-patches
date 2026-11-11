@@ -1228,7 +1228,7 @@ val POCKET_CASTS_COMPATIBILITY = Compatibility(
         packageName = "au.com.shiftyjelly.pocketcasts",
         apkFileType = ApkFileType.APKS,
         appIconColor = 0xF43E37,
-        targets = listOf(AppTarget(version = "8.16", versionCode = 9441))
+        targets = listOf(AppTarget(version = "8.16", versionCode = 9441), AppTarget(version = "8.25-rc-1"))
     )
 
 val PODSLINK_COMPATIBILITY = Compatibility(
