@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      packages: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -17,6 +18,9 @@ jobs:
           distribution: temurin
           java-version: '21'
       - name: Compile Morphe patch bundle
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
         run: ./gradlew :patches:buildAndroid --no-daemon
       - name: Upload bundle
         uses: actions/upload-artifact@v4
