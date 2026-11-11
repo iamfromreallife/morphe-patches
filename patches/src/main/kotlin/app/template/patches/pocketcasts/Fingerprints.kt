@@ -85,7 +85,7 @@ val SubscriptionPlatformEnumFingerprint = Fingerprint(
 // fully-qualified, non-obfuscated return/parameter types are already unique
 // across the whole app.
 val SubscriptionStatusMapperFingerprint = Fingerprint(
-    name = "M",
+    name = "J",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC, AccessFlags.FINAL),
     returnType = "Lau/com/shiftyjelly/pocketcasts/models/type/Membership;",
     parameters = listOf("Lau/com/shiftyjelly/pocketcasts/servers/sync/SubscriptionStatusResponse;"),
